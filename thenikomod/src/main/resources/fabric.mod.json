@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "thenikomod",
+	"version": "${version}",
+	"name": "TheNikoMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Niko!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/thenikomod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.niko.nikos_adventure.TheNikoMod"
+		],
+		"client": [
+			"net.niko.nikos_adventure.TheNikoModClient"
+		],
+		"fabric-datagen": [
+			"net.niko.nikos_adventure.TheNikoModDataGenerator"
+		]
+	},
+	"mixins": [
+		"thenikomod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
